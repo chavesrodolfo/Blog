@@ -1,10 +1,10 @@
 [![Next.js](https://assets.vercel.com/image/upload/v1538361091/repositories/next-js/next-js.png)](https://nextjs.org)
 
 <p align="center">
-  <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#tech-stack">Tech Stack</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#hosting">Hosting</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#manifest">Manifest</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tech-stack">Tech Stack</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-hosting">Hosting</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-manifest">Manifest</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 <p align="center">
@@ -36,8 +36,8 @@ This project was build using the folloing technologies.
 
 ## 📄 Manifest
 
-- [Blog | Manifest](http://dodz-manifest.vercel.app/)
-- [API](https://dodz-manifest.vercel.app/api/page-views-preview?id=1)
+- [Manifest | Blog](https://dodz.dev)
+- [API](https://dodz.dev/api/page-views-preview?id=1)
 
 
 ## 📝 License

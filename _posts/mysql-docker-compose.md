@@ -1,13 +1,13 @@
 ---
 title: 'MySQL with Docker Compose'
-excerpt: 'Hi! I want to share a very simple way to create a MySQL instance using Docker Compose.'
-coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/fsf104dlrudu424bd8xq.png'
-date: '2020-09-21T23:35:00.322Z'
+excerpt: 'Hi! I want to share a very simple way to create a MySQL instance using Docker Compose. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/upqkgnyo34qtccv6vxoo.jpg'
+date: '2020-10-21T23:35:00.322Z'
 author:
   name: Rodolfo Chaves Fernandes
-  picture: '/assets/blog/authors/joe.jpeg'
+  picture: '/assets/blog/authors/rodolfo.png'
 ogImage:
-  url: 'https://dev-to-uploads.s3.amazonaws.com/i/fsf104dlrudu424bd8xq.png'
+  url: 'https://media.gettyimages.com/videos/dusky-dolphin-somersaults-new-zealand-video-id1156443605?s=640x640'
 ---
 
 Hey Folks!

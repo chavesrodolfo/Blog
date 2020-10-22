@@ -1,5 +1,10 @@
 .markdown {
   @apply text-lg leading-relaxed;
+  @apply text-gray-900 leading-normal break-words;
+}
+
+.markdown > * + * {
+  @apply mt-0 mb-4;
 }
 
 .markdown p,
@@ -15,4 +20,16 @@
 
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown code {
+  @apply font-mono text-sm inline bg-gray-200 rounded px-1;
+}
+
+.markdown pre {
+  @apply bg-gray-100 rounded p-4;
+}
+
+.markdown pre code {
+  @apply block bg-transparent p-0 overflow-visible rounded-none;
 }

@@ -3,14 +3,11 @@
   @apply text-gray-900 leading-normal break-words;
 }
 
-.markdown > * + * {
+.markdown>*+* {
   @apply mt-0 mb-4;
 }
 
-.markdown p,
-.markdown ul,
-.markdown ol,
-.markdown blockquote {
+.markdown p, .markdown ul, .markdown ol, .markdown blockquote {
   @apply my-6;
 }
 
@@ -32,4 +29,22 @@
 
 .markdown pre code {
   @apply block bg-transparent p-0 overflow-visible rounded-none;
+}
+
+.markdown table td {
+  border: 1px solid #dee2e6;
+  padding: 3px 10px 3px 10px;
+}
+
+.markdown thead th {
+  border: 1px solid #dee2e6;
+  padding: 3px 10px 3px 10px;
+  background: grey;
+  color: white;
+}
+
+.markdown blockquote {
+  @apply my-6;
+  @apply bg-gray-100 rounded p-2;
+  border-left: 8px solid #dee2e6;
 }

@@ -8,20 +8,27 @@ import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
+import { SITE_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import PostType from '../../types/post'
+import MoreStories from '../../components/more-articles'
 
 import { useFetch } from "@/lib/fetcher";
 
 type Props = {
   post: PostType
-  morePosts: PostType[]
+  allPosts: PostType[]
   preview?: boolean
 }
 
-const Post = ({ post, morePosts, preview }: Props) => {
+
+const Post = ({ post, allPosts, preview }: Props) => {
   const router = useRouter()
+  
+  const morePosts = allPosts.filter(p => {
+    return p.slug !== post.slug
+  })
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -39,7 +46,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
             <article className="mb-32">
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title} | {SITE_NAME}
                 </title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
@@ -52,6 +59,8 @@ const Post = ({ post, morePosts, preview }: Props) => {
               />
               <PostBody content={post.content} />
             </article>
+
+            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </>
         )}
       </Container>
@@ -68,6 +77,16 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
+  
+  const allPosts = getAllPosts([
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
+  ])
+
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
@@ -77,6 +96,7 @@ export async function getStaticProps({ params }: Params) {
     'ogImage',
     'coverImage',
   ])
+
   const content = await markdownToHtml(post.content || '')
 
   return {
@@ -85,6 +105,7 @@ export async function getStaticProps({ params }: Params) {
         ...post,
         content,
       },
+      allPosts
     },
   }
 }
@@ -103,3 +124,4 @@ export async function getStaticPaths() {
     fallback: false,
   }
 }
+

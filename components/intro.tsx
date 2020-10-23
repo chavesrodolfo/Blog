@@ -1,4 +1,4 @@
-import { CMS_NAME } from '../lib/constants'
+import { SITE_DESCRIPTION } from "@/lib/constants"
 
 const Intro = () => {
   return (
@@ -7,14 +7,7 @@ const Intro = () => {
         Dodz.dev
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        A statically generated blog example using{' '}
-        <a
-          href="https://nextjs.org/"
-          className="underline hover:text-success duration-200 transition-colors"
-        >
-          Next.js
-        </a>{' '}
-        and {CMS_NAME}.
+        {`${SITE_DESCRIPTION}`}
       </h4>
     </section>
   )

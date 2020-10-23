@@ -23,7 +23,7 @@ This is my personal Blog | Manifest about technology.
 
 ## 🚀 Tech Stack
 
-This project was build using the folloing technologies.
+This project was build using the following technologies.
 
 - [NextJS](https://nextjs.org/)
 - [MongoDB](https://expressjs.com/pt-br/)
